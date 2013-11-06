@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" type="text/css" href="semantic/packaged/css/semantic.min.css"/>
+	<link rel="stylesheet" type="text/css" href="site.css"/>
+</head>
+<body>
+	<div class="filter-area">
+			<div class="header">Search</div>
+			<div class="header-content">
+				<input type="text" name="search-box" id="search-box">
+				<input type="checkbox" name="keep-filter">Keep filter selections</input>
+				<div class="ui icon button search-button">
+					<i class="search icon"></i>
+				</div>
+			</div>
+	</div>
+
+	<div class="filter-area filters">
+			<div class="header">Filter By</div>
+			<div class="header-content">
+				<div class="ui basic vertical accordion menu">
+				  <div class="item">
+				    <a class="title">
+				      <i class="dropdown icon"></i>
+				      Time
+				    </a>
+				    <div class="content menu">
+				    	<div class="ui form item">
+				    		<p>From</p>
+					    	<input type="date" name="from" id="from-date">
+					    	<p>To</p>
+					    	<input type="date" name="to" id="to-date">
+				    	</div>
+				    </div>
+				  </div>
+				  <div class="item">
+				    <a class="title">
+				      <i class="dropdown icon"></i>
+				      Error Code
+				    </a>
+				    <div class="content menu">
+				    	<div class="ui form item">
+					    	<select>
+					    		<option>E100</option>
+					    		<option>01</option>
+					    	</select>
+						</div>
+				    </div>
+				  </div>
+				  <div class="item">
+				    <a class="title">
+				      <i class="dropdown icon"></i>
+				      Error
+				    </a>
+				    <div class="content menu">
+				    	<div class="ui form item">
+					    	<select>
+					    		<option>Unknown Service ID</option>
+					    		<option>Booked Slot</option>
+					    	</select>
+						</div>
+				    </div>
+				  </div>
+				  <div class="item">
+				    <a class="title">
+				      <i class="dropdown icon"></i>
+				      Source
+				    </a>
+				    <div class="content menu">
+				    	<div class="ui form item">
+					    	<input type="radio" name="source" value="CAB" checked>Choose and Book<br>
+							<input type="radio" name="source" value="PAS"> Patient Admin System<br>
+						</div>
+				    </div>
+				  </div>
+				  <div class="item">
+				    <a class="title">
+				      <i class="dropdown icon"></i>
+				      Action
+				    </a>
+				    <div class="content menu">
+				    	<div class="ui form item">
+					    	<select>
+					    		<option>Request available slots</option>
+					    		<option>Contact CAB staff</option>
+					    	</select>
+						</div>
+				    </div>
+				  </div>
+				  <div class="item">
+				    <a class="title">
+				      <i class="dropdown icon"></i>
+				      ID
+				    </a>
+				    <div class="content menu">
+				    	<div class="ui form item">
+					    	<input type="checkbox" name="conv-id-check">Conversation ID</input>
+					    	<input type="text" name="convo-id" id="convo-id">
+					    	<input type="checkbox" name="message-id-check">Message ID</input>
+					    	<input type="text" name="message-id" id="message-id">
+						</div>
+				    </div>
+				  </div>
+				  <div class="item">
+				    <a class="title">
+				      <i class="dropdown icon"></i>
+				      UBRN/USRN
+				    </a>
+				    <div class="content menu">
+				    	<div class="ui form item">
+					    	
+						</div>
+				    </div>
+				  </div>
+				  <div class="item">
+				    <a class="title">
+				      <i class="dropdown icon"></i>
+				      Service
+				    </a>
+				    <div class="content menu">
+				    	<div class="ui form item">
+					    	
+						</div>
+				    </div>
+				  </div>
+				  <div class="item">
+				    <a class="title">
+				      <i class="dropdown icon"></i>
+				      Resolution
+				    </a>
+				    <div class="content menu">
+				    	<div class="ui form item">
+					    	
+						</div>
+				    </div>
+				  </div>
+			</div>
+		</div>
+	</div>
+
+	<div id="cards">
+		
+	</div>
+
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="semantic/packaged/javascript/semantic.min.js"></script>
+	<script type="text/javascript" src="semantic/minified/modules/accordion.min.js"></script>
+
+	<script type="text/javascript">
+	$( document ).ready(function() {
+  		$('.ui.accordion').accordion();	});
+	</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+.filter-area {
+	border: 1px solid lightgrey;
+	width: 250px;
+	height: auto;
+}
+
+html {
+	font-family: 'Segoe UI';
+}
+
+.header-content {
+	padding: 5px 5px 5px 5px;
+}
+
+#search-box {
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.header {
+	background-color: lightgrey;
+	padding-left: 5px;
+	height:25px;
+}
+
+.search-button {
+	margin-left: 33px;
+}
+
+.filters {
+	margin-top: 5px;
+}
+
+#from-date, #to-date {
+	font-size: 1.0em;
+}
+
+.ui .basic .vertical .accordion .menu {
+	border-radius: 0;
+}
